@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Weather Report</h1>
-      <WeatherDisplay weather={weather} />>
+      <WeatherDisplay weather={weather} />
         {/* Do not remove the main div */}
     </div>
   );
