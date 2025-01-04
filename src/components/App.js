@@ -2,6 +2,7 @@
 import React from "react";
 import './../styles/App.css';
 import WeatherDisplay from "./WeatherDisplay";
+import React, { useState, useEffect } from "react";
 
 const App = () => {
    const [weather, setWeather] = useState({ temperature: 0, conditions: "" });
