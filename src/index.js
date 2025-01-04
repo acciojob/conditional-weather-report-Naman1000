@@ -17,6 +17,7 @@ const WeatherDisplay = ({ weather }) => {
     </div>
   );
 };
+export default WeatherDisplay;
 
 
 
