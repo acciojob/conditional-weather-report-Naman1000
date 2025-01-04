@@ -1,13 +1,23 @@
 
 import React from "react";
 import './../styles/App.css';
+import WeatherDisplay from "./WeatherDisplay";
 
 const App = () => {
+   const [weather, setWeather] = useState({ temperature: 0, conditions: "" });
+
+  useEffect(() => {
+    // Simulate fetching weather data
+    const weatherInput = { temperature: 25, conditions: "Sunny" };
+    setWeather(weatherInput);
+  }, []);
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Weather Report</h1>
+      <WeatherDisplay weather={weather} />>
         {/* Do not remove the main div */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
